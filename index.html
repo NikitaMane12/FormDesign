@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Designerr</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Form Designer</h1>
+      <button class="save-btn" onclick="saveForm()">Save</button>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <h3>Componets</h3>
+        <button onclick="addElement('text')">Input</button>
+        <button onclick="addElement('select')">Select</button>
+        <button onclick="addElement('textarea')">Textarea</button>
+        <button onclick="addElement('checkbox')">Add Checkbox</button>
+      </div>
+      <div class="form-area">
+        <div id="form-container"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
