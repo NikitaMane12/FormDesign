@@ -3,16 +3,6 @@ function addElement(type) {
 
   const element = document.createElement("div");
   element.className = "element";
-  element.draggable = true;
-
-  element.addEventListener("dragstart", (e) => {
-    e.dataTransfer.setData("text/plain", e.target.id);
-    element.classList.add("dragging");
-  });
-
-  element.addEventListener("dragend", () => {
-    element.classList.remove("dragging");
-  });
 
   const label = document.createElement("label");
   label.textContent = `${type.charAt(0).toUpperCase() + type.slice(1)}: `;
